@@ -1,0 +1,10 @@
+*{
+  margin: 0px;
+}
+.main{
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 450px;
+  margin: 0 auto;
+  background: rgb(228, 223, 223);
+  text-align: center;
+}
