@@ -9,4 +9,21 @@
     padding: 10px;
     margin: 0px 10px 5px 10px ;
     background-color: rgb(255, 255, 255);
+    
+}
+.data:hover{
+    background-color: rgb(156, 9, 9);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delBtn{
+    background-color: blueviolet;
+    color: white;
+}
+.delBtn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

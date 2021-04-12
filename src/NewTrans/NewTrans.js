@@ -27,7 +27,7 @@ function NewTrans() {
     <h3>Transaction Amount</h3>
     <input type='number' placeholder="Enter Amonut"  value={amount} onChange={(ev)=>{setAmount(ev.target.value)}} required />
     <h4 style={{textAlign:'center', margin:'5px'}}>(Add Income As +ve and Expense As -ve)</h4>
-    <button
+    <button className={style.button}
     onClick={()=>{handleChange()}}>Add Transaction</button>
     </div>
     </div>

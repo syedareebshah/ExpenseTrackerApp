@@ -9,12 +9,7 @@ function Balance() {
 
   var arr = []
 
-  transactions.map((trans) => {   
-    var x = trans.amount
-    var x = Number(x)
-    arr.push(x)
-    
-  })
+  transactions.forEach((trans) => arr.push(+trans.amount))
 
   var income = 0;
   var expence = 0;

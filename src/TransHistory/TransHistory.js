@@ -5,7 +5,7 @@ import style from './TransHistory.module.css'
 
 
 function TransHistory() {
-  let { transactions } = useContext(TransContext)
+  let { transactions, delItem } = useContext(TransContext)
   return (
     <div className={style.main}>
       <h2>Transaction History</h2>
@@ -18,6 +18,14 @@ function TransHistory() {
             <div key={ind} className={style.data}>
               <h3>{trans.desc}</h3>
               <h3>{trans.amount} $</h3>
+              <button
+              className={style.delBtn} 
+              onClick={()=>{
+                delItem(ind)
+              }}
+              >
+                Delete
+              </button>
             </div>
           )
         })

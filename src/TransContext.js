@@ -16,8 +16,17 @@ export function TransactionProvider({children}) {
                 desc: transObj.desc  
             },
             
-        }
-        )
+        })
+    }
+            
+    let delItem = (ind) => {
+        dispatch({
+            type : "Delete",
+            payload: {
+                id: ind
+            }
+        })
+        console.log(ind,"chll rha hy")
 
     }
 
@@ -26,6 +35,7 @@ export function TransactionProvider({children}) {
         <TransContext.Provider value={
             {
                 addTrans,
+                delItem,
                 transactions:state
             }
         }>

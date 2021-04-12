@@ -16,7 +16,7 @@ input{
     padding: 7px;
     
 }
-button{
+.button{
     padding: 10px;
     font-weight: bold;
     color: white;
