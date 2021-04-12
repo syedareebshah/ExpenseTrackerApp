@@ -37,7 +37,7 @@ function Balance() {
           <h2>$ {income}</h2>
         </div>
         <div>
-          <h4>Ecpense</h4>
+          <h4>Expense</h4>
           <h2>$ {expence}</h2>
         </div>
 
